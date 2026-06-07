@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Аккомпанемент по слуху: программа обучения</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Программа обучения</p>
+          <h1>Аккомпанемент по слуху</h1>
+        </div>
+        <a class="download-link theory-link" href="Аккомпанемент по слуху. Теоретический курс.pdf" download>
+          Скачать теорию
+          <span>единое пособие для всех курсов</span>
+        </a>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <nav class="level-switcher" aria-label="Разделы программы">
+        <button class="level-button is-active" type="button" data-view="matrix">Матрица</button>
+        <button class="level-button" type="button" data-view="plan">Тематический план</button>
+        <button class="level-button" type="button" data-view="lessons">Конспект уроков</button>
+      </nav>
+
+      <section class="course-strip" aria-label="Выбор курса">
+        <div class="course-label">
+          <span>Сейчас открыт</span>
+          <strong id="current-course-label">Курс 1</strong>
+        </div>
+        <div class="course-buttons" id="course-buttons"></div>
+      </section>
+
+      <section class="notice" id="reference-notice">
+        Ссылки на главы вида <strong>4.2</strong> относятся к файлу
+        <a href="Аккомпанемент по слуху. Теоретический курс.pdf" download>«Аккомпанемент по слуху. Теоретический курс»</a>.
+      </section>
+
+      <section class="view is-active" id="matrix-view" aria-labelledby="matrix-title">
+        <div class="section-heading">
+          <p class="eyebrow">Общая логика программы</p>
+          <h2 id="matrix-title">Матрица курсов</h2>
+        </div>
+        <div class="matrix-wrap">
+          <table class="matrix-table">
+            <thead>
+              <tr>
+                <th>Курс</th>
+                <th>Форма работы</th>
+                <th>Об акк-те</th>
+                <th>Гармоническая основа акк-та</th>
+                <th>Аккорды и лад</th>
+                <th>Изучение тональностей</th>
+                <th>Фактура</th>
+                <th>Форма и худ. образ</th>
+              </tr>
+            </thead>
+            <tbody id="matrix-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="view" id="plan-view" aria-labelledby="plan-title">
+        <div class="section-heading">
+          <p class="eyebrow">Тематический план</p>
+          <h2 id="plan-title"></h2>
+        </div>
+        <div class="detail-grid" id="plan-grid"></div>
+      </section>
+
+      <section class="view" id="lessons-view" aria-labelledby="lessons-title">
+        <div class="section-heading">
+          <p class="eyebrow">Конспект уроков</p>
+          <h2 id="lessons-title"></h2>
+        </div>
+        <div class="lesson-downloads">
+          <a class="download-link practice-link" id="practice-link" href="Курс 1.pdf" download>
+            Скачать практикум для курса 1
+            <span>полный текст уроков</span>
+          </a>
+          <a class="download-link theory-link" href="Аккомпанемент по слуху. Теоретический курс.pdf" download>
+            Скачать теорию
+            <span>единое пособие для всех курсов</span>
+          </a>
+        </div>
+        <div class="lessons-list" id="lessons-list"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
