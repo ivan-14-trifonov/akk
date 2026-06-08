@@ -260,11 +260,11 @@ th {
   color: var(--field-heading-ink);
   background: var(--field-heading-bg);
   padding-block: 10px;
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.25;
   text-align: left;
   vertical-align: middle;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 td {
