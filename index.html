@@ -24,7 +24,7 @@
       <nav class="level-switcher" aria-label="Разделы программы">
         <button class="level-button is-active" type="button" data-view="matrix">Матрица</button>
         <button class="level-button" type="button" data-view="plan">Содержание по курсам</button>
-        <button class="level-button" type="button" data-view="lessons">Конспект уроков</button>
+        <button class="level-button" type="button" data-view="lessons">Конспекты уроков</button>
       </nav>
 
       <section class="course-strip" aria-label="Выбор курса" hidden>
@@ -62,12 +62,12 @@
       <section class="view" id="plan-view" aria-labelledby="plan-title">
         <div class="section-heading">
           <p class="eyebrow">Содержание предмета по курсам обучения</p>
-          <div class="heading-row">
-            <h2 id="plan-title"></h2>
-            <button class="section-action" type="button" data-view="lessons">Перейти к конспектам уроков</button>
-          </div>
+          <h2 id="plan-title"></h2>
         </div>
         <div class="detail-grid" id="plan-grid"></div>
+        <div class="section-footer">
+          <button class="section-action" type="button" data-view="lessons">Перейти к конспекту уроков</button>
+        </div>
       </section>
 
       <section class="view" id="lessons-view" aria-labelledby="lessons-title">
