@@ -253,12 +253,18 @@ td {
 
 th {
   position: sticky;
-  top: 78px;
+  top: 0;
   z-index: 2;
   color: var(--ink);
   background: #f2ece3;
-  font-size: 13px;
+  padding-block: 10px;
+  font-size: 12px;
+  line-height: 1.25;
   text-align: left;
+  vertical-align: middle;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: auto;
 }
 
 td {
@@ -394,10 +400,6 @@ tbody tr:hover {
 
   .detail-grid {
     grid-template-columns: 1fr;
-  }
-
-  th {
-    top: 166px;
   }
 
   .download-link {
