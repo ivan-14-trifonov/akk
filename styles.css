@@ -114,7 +114,8 @@ button {
 
 .level-button,
 .course-button,
-.matrix-jump {
+.matrix-jump,
+.section-action {
   border: 1px solid transparent;
   border-radius: 7px;
   cursor: pointer;
@@ -131,7 +132,8 @@ button {
 
 .level-button:hover,
 .course-button:hover,
-.matrix-jump:hover {
+.matrix-jump:hover,
+.section-action:hover {
   transform: translateY(-1px);
 }
 
@@ -202,6 +204,21 @@ button {
 
 .section-heading {
   margin-bottom: 18px;
+}
+
+.heading-row {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-action {
+  flex: 0 0 auto;
+  padding: 10px 14px;
+  color: #fff;
+  background: var(--accent);
+  font-weight: 800;
 }
 
 .download-link {
