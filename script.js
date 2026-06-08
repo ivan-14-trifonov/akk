@@ -484,7 +484,7 @@ function renderMatrix() {
         <tr>
           <td class="course-cell">
             Курс ${course.id}
-            <button class="matrix-jump" type="button" data-course="${course.id}" data-view="plan">Открыть</button>
+            <button class="matrix-jump" type="button" data-course="${course.id}" data-view="plan">Подробнее</button>
           </td>
           ${cells}
         </tr>
@@ -513,7 +513,7 @@ function renderLessons() {
   const course = getCourse();
   lessonsTitle.textContent = `${course.id}. ${course.title}`;
   practiceLink.href = `course-${course.id}.pdf`;
-  practiceLink.firstChild.textContent = `Открыть практикум для курса ${course.id}`;
+  practiceLink.firstChild.textContent = `Открыть / скачать практикум для курса ${course.id}`;
   lessonsList.innerHTML = course.lessons
     .map((lesson, index) => {
       const open = index === 0 ? " open" : "";
