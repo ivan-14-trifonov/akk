@@ -513,7 +513,7 @@ function renderLessons() {
   const course = getCourse();
   lessonsTitle.textContent = `${course.id}. ${course.title}`;
   practiceLink.href = `Курс ${course.id}.pdf`;
-  practiceLink.firstChild.textContent = `Скачать практикум для курса ${course.id}`;
+  practiceLink.firstChild.textContent = `Открыть практикум для курса ${course.id}`;
   lessonsList.innerHTML = course.lessons
     .map((lesson, index) => {
       const open = index === 0 ? " open" : "";
