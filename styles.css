@@ -327,11 +327,22 @@ tbody tr:hover {
 
 .lesson-downloads {
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 18px;
   padding: 12px;
   border-radius: 8px;
+}
+
+.reference-note {
+  flex: 0 0 100%;
+  margin: 0;
+  color: var(--muted);
+}
+
+.theory-note {
+  color: var(--accent-dark);
 }
 
 .lessons-list {

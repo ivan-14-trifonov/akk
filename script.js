@@ -536,7 +536,7 @@ function setView(view) {
   document.querySelectorAll(".view").forEach((section) => {
     section.classList.toggle("is-active", section.id === `${view}-view`);
   });
-  referenceNotice.style.display = view === "matrix" ? "none" : "block";
+  referenceNotice.style.display = view === "lessons" ? "block" : "none";
 }
 
 function setCourse(courseId) {
