@@ -484,7 +484,7 @@ function renderMatrix() {
         <tr>
           <td class="course-cell">
             Курс ${course.id}
-            <button class="matrix-jump" type="button" data-course="${course.id}" data-view="plan">План</button>
+            <button class="matrix-jump" type="button" data-course="${course.id}" data-view="plan">Открыть</button>
           </td>
           ${cells}
         </tr>
