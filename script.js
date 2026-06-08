@@ -528,6 +528,15 @@ function renderLessons() {
     .join("");
 }
 
+practiceLink.addEventListener("click", (event) => {
+  if (currentCourse === 1) {
+    return;
+  }
+
+  event.preventDefault();
+  alert(`Практикум для ${currentCourse}-го курса находится на этапе разработки.`);
+});
+
 function setView(view) {
   currentView = view;
   document.querySelectorAll(".level-button").forEach((button) => {
