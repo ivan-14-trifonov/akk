@@ -1,4 +1,4 @@
-const theoryFile = "Аккомпанемент по слуху. Теоретический курс.pdf";
+const theoryFile = "theory.pdf";
 
 const fields = [
   "Форма работы",
@@ -512,7 +512,7 @@ function renderPlan() {
 function renderLessons() {
   const course = getCourse();
   lessonsTitle.textContent = `${course.id}. ${course.title}`;
-  practiceLink.href = `Курс ${course.id}.pdf`;
+  practiceLink.href = `course-${course.id}.pdf`;
   practiceLink.firstChild.textContent = `Открыть практикум для курса ${course.id}`;
   lessonsList.innerHTML = course.lessons
     .map((lesson, index) => {
