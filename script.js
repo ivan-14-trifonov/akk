@@ -452,6 +452,7 @@ let currentView = "matrix";
 const matrixBody = document.querySelector("#matrix-body");
 const planGrid = document.querySelector("#plan-grid");
 const lessonsList = document.querySelector("#lessons-list");
+const courseStrip = document.querySelector(".course-strip");
 const courseButtons = document.querySelector("#course-buttons");
 const currentCourseLabel = document.querySelector("#current-course-label");
 const planTitle = document.querySelector("#plan-title");
@@ -539,6 +540,7 @@ practiceLink.addEventListener("click", (event) => {
 
 function setView(view) {
   currentView = view;
+  courseStrip.hidden = view === "matrix";
   document.querySelectorAll(".level-button").forEach((button) => {
     button.classList.toggle("is-active", button.dataset.view === view);
   });
